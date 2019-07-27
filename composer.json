@@ -37,7 +37,7 @@
     ],
     "require": {
         "php": ">=5.6",
-        "thunder/thunder-distribution": "dev-8.x-3.x",
+        "thunder/thunder-distribution": "~3.3",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/console": "^1.2",
