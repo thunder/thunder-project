@@ -77,7 +77,7 @@
         "enable-patching": true,
         "drupal-scaffold": {
             "locations": {
-                "web-root": "web/"
+                "web-root": "docroot/"
             }
         }
     },
