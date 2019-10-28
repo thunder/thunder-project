@@ -56,6 +56,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "autoload": {
+        "files": ["load.environment.php"]
+    },
     "extra": {
         "composer-exit-on-patch-failure": true,
         "installer-types": ["bower-asset", "npm-asset"],
