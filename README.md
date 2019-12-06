@@ -5,7 +5,7 @@ This project template should provide a kickstart for managing your site dependen
 ## Usage
 
 See our [install documentation](https://thunder.github.io/thunder-documentation/quick-install) on how to use Thunder project.
-We also have documentation on [extending](https://thunder.github.io/thunder-documentation/extending) and [updating](https://thunder.github.io/thunder-documentation/updating) Thunder sites. 
+We also have documentation on [extending](https://thunder.github.io/thunder-documentation/quick-install#install-extend) and [updating](https://thunder.github.io/thunder-documentation/quick-install#install-update) Thunder sites. 
 
 ## What does the template do?
 
