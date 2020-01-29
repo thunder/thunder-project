@@ -37,17 +37,15 @@
     ],
     "require": {
         "php": ">=7.2",
-        "composer/installers": "^1.2",
+        "thunder/thunder-distribution": "~3.4",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal/console": "^1.6.1",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/console": "^1.6.1",
+        "composer/installers": "^1.2",
         "drush/drush": "^9.0|^10.0",
-        "oomphinc/composer-installers-extender": "^1.1",
-        "thunder/thunder-distribution": "~3.4",
-        "thunder/thunder_styleguide": "dev-8.x-1.x",
-        "thunder/thunder_testing_demo": "3.x-dev",
         "vlucas/phpdotenv": "^2.4",
+        "oomphinc/composer-installers-extender": "^1.1",
         "zaporylie/composer-drupal-optimizations": "^1.1"
     },
     "require-dev": {
