@@ -40,7 +40,6 @@
         "thunder/thunder-distribution": "~3.4",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-recommended": "^8.8",
         "drupal/console": "^1.6.1",
         "composer/installers": "^1.2",
         "drush/drush": "^9.0|^10.0",
