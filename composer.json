@@ -36,11 +36,10 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.3",
         "thunder/thunder-distribution": "~3.4",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal/core-composer-scaffold": "^8.8",
-        "drupal/console": "^1.6.1",
+        "drupal/core-composer-scaffold": "^8.8|^9.0",
         "composer/installers": "^1.2",
         "drush/drush": "^9.0|^10.0",
         "vlucas/phpdotenv": "^2.4",
@@ -48,7 +47,7 @@
         "zaporylie/composer-drupal-optimizations": "^1.1"
     },
     "require-dev": {
-        "drupal/core-dev": "^8.8"
+        "drupal/core-dev": "^8.8|^9.0"
     },
     "conflict": {
         "drupal/drupal": "*"
