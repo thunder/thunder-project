@@ -33,6 +33,10 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:BurdaMagazinOrg/module-update_helper.git"
         }
     ],
     "require": {
