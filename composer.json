@@ -37,6 +37,10 @@
         {
             "type": "git",
             "url": "git@github.com:BurdaMagazinOrg/module-update_helper.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:BurdaMagazinOrg/theme-thunder-admin.git"
         }
     ],
     "require": {
