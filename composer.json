@@ -28,11 +28,11 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/BurdaMagazinOrg/module-update_helper"
+            "url": "https://github.com/BurdaMagazinOrg/module-update_helper.git"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/BurdaMagazinOrg/theme-thunder-admin"
+            "url": "https://github.com/BurdaMagazinOrg/theme-thunder-admin.git"
         },
         {
             "type": "composer",
