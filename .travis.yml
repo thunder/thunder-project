@@ -1,7 +1,15 @@
 language: php
-dist: trusty
-sudo: false
-php: 7.3
+dist: xenial
+
+services:
+  - mysql
+
+php:
+  - 7.3
+
+env:
+  global:
+    - COMPOSER_MEMORY_LIMIT=-1
 
 cache:
   apt: true
@@ -9,9 +17,6 @@ cache:
   - "$HOME/.composer/cache"
   - "$HOME/.drush/cache"
 
-env:
-    - COMPOSER_MEMORY_LIMIT=-1
-    
 branches:
   only:
     - /[0-9]+\.x/
