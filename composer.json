@@ -37,7 +37,6 @@
     ],
     "require": {
         "thunder/thunder-distribution": "~6.0",
-        "cweagans/composer-patches": "^1.6.5",
         "drupal/core-composer-scaffold": "^9.0",
         "composer/installers": "^1.2",
         "drush/drush": "^9.0||^10.0",
