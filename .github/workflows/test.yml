@@ -3,7 +3,7 @@ name: Test composer install
 on:
   pull_request:
     branches:
-      - [1-9]+.x
+      - 3.x
 
 jobs:
   build:
@@ -29,4 +29,3 @@ jobs:
 
     - name: Prepare the build
       run: drush si thunder --db-url=mysql://root@127.0.0.1/testing -y
-
