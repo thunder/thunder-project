@@ -1,0 +1,38 @@
+name: Test composer install
+
+on:
+  pull_request:
+    branches:
+      - 3.x
+
+jobs:
+  build:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: shivammathur/setup-php@v2
+      with:
+        coverage: none
+        php-version: 8.0
+        extensions: Imagick, gd, pdo_mysql
+
+    - name: Cache composer dependencies
+      uses: actions/cache@v1
+      with:
+        path: ~/.composer/cache
+        key: ${{ runner.os }}-composer-cache-${{ hashFiles('**/composer.json') }}
+        restore-keys: ${{ runner.os }}-composer-cache-
+
+    - name: Start MySql service
+      run: |
+        sudo /etc/init.d/mysql start
+        mysql -uroot -proot -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';"
+
+    - name: Install dependencies
+      run: composer install
+
+    - name: Install Thunder
+      run: vendor/bin/drush si thunder --db-url=mysql://root:root@127.0.0.1/testing -y
