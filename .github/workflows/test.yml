@@ -28,4 +28,4 @@ jobs:
       run: composer install
 
     - name: Prepare the build
-      run: drush si thunder --db-url=mysql://root@127.0.0.1/testing -y
+      run: vendor/bin/drush si thunder --db-url=mysql://root@127.0.0.1/testing -y
