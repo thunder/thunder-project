@@ -19,6 +19,13 @@ jobs:
         php-version: 8.0
         extensions: Imagick, gd, pdo_mysql
 
+    - name: Cache composer dependencies
+      uses: actions/cache@v1
+      with:
+        path: ~/.composer/cache
+        key: ${{ runner.os }}-composer-cache-${{ hashFiles('**/composer.json') }}
+        restore-keys: ${{ runner.os }}-composer-cache-
+
     - name: Start MySql service
       run: |
         sudo /etc/init.d/mysql start
@@ -27,5 +34,5 @@ jobs:
     - name: Install dependencies
       run: composer install
 
-    - name: Prepare the build
-      run: vendor/bin/drush si thunder --db-url=mysql://root@127.0.0.1/testing -y
+    - name: Install Thunder
+      run: vendor/bin/drush si thunder --db-url=mysql://root:root@127.0.0.1/testing -y
