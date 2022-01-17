@@ -13,10 +13,6 @@
             "email": "christian.fritsch@burda.com"
         },
         {
-            "name": "Mladen Todorovic",
-            "email": "mladen.todorovic@burda.com"
-        },
-        {
             "name": "Alex Pott",
             "email": "alex.a.pott@gmail.com"
         },
@@ -36,10 +32,10 @@
         }
     ],
     "require": {
-        "thunder/thunder-distribution": "~6.0@STABLE",
+        "thunder/thunder-distribution": "~6.3@STABLE",
         "drupal/core-composer-scaffold": "^9.0",
         "composer/installers": "^1.2",
-        "drush/drush": "^10.3||^11.0",
+        "drush/drush": "^11.0",
         "vlucas/phpdotenv": "^2.4",
         "oomphinc/composer-installers-extender": "^2.0"
     },
