@@ -73,6 +73,13 @@
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "process-timeout": 2000,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "oomphinc/composer-installers-extender": true
+        }
     }
 }
