@@ -31,6 +31,14 @@ jobs:
         sudo /etc/init.d/mysql start
         mysql -uroot -proot -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';"
 
+    - name: Allow all plugins
+      run: |
+        composer config allow-plugins.cweagans/composer-patches true --no-plugins
+        composer config allow-plugins.drupal/core-composer-scaffold true --no-plugins
+        composer config allow-plugins.composer/installers true --no-plugins
+        composer config allow-plugins.oomphinc/composer-installers-extender true --no-plugins
+        composer config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true --no-plugins
+
     - name: Install dependencies
       run: composer install
 
