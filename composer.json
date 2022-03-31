@@ -78,7 +78,6 @@
     },
     "config": {
         "sort-packages": true,
-        "process-timeout": 2000,
-        "allow-plugins": { }
+        "process-timeout": 2000
     }
 }
