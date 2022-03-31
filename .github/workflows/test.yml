@@ -35,7 +35,6 @@ jobs:
       run: |
         composer config allow-plugins.cweagans/composer-patches true --no-plugins
         composer config allow-plugins.drupal/core-composer-scaffold true --no-plugins
-        composer config allow-plugins.drupal/core-project-message true --no-plugins
         composer config allow-plugins.composer/installers true --no-plugins
         composer config allow-plugins.oomphinc/composer-installers-extender true --no-plugins
         composer config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true --no-plugins
