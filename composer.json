@@ -35,7 +35,7 @@
         "thunder/thunder-distribution": "7.0@STABLE",
         "drupal/core-composer-scaffold": "^10.0",
         "composer/installers": "^1.2",
-        "drush/drush": "^11.0",
+        "drush/drush": "^12.0",
         "vlucas/phpdotenv": "^2.4",
         "oomphinc/composer-installers-extender": "^2.0"
     },
@@ -74,6 +74,14 @@
     },
     "config": {
         "sort-packages": true,
-        "process-timeout": 2000
+        "process-timeout": 2000,
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true,
+            "phpstan/extension-installer": true,
+            "drupal/core-composer-scaffold": true,
+            "oomphinc/composer-installers-extender": true
+        }
     }
 }
