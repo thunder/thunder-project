@@ -35,7 +35,7 @@
         "thunder/thunder-distribution": "^7.0@STABLE",
         "drupal/core-composer-scaffold": "^10.0",
         "composer/installers": "^1.2",
-        "drush/drush": "^11.0",
+        "drush/drush": "^12.1",
         "vlucas/phpdotenv": "^2.4",
         "oomphinc/composer-installers-extender": "^2.0"
     },

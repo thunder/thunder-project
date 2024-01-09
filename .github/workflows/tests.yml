@@ -3,7 +3,7 @@ name: Test composer install
 on:
   pull_request:
     branches:
-      - 3.x
+      - 4.x
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
     - uses: shivammathur/setup-php@v2
       with:
         coverage: none
-        php-version: 8.0
+        php-version: 8.1
         extensions: Imagick, gd, pdo_mysql
 
     - name: Cache composer dependencies
@@ -38,6 +38,7 @@ jobs:
         composer config allow-plugins.composer/installers true --no-plugins
         composer config allow-plugins.oomphinc/composer-installers-extender true --no-plugins
         composer config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true --no-plugins
+        composer config allow-plugins.phpstan/extension-installer true --no-plugins
 
     - name: Install dependencies
       run: composer install
