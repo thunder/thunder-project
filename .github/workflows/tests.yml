@@ -3,7 +3,7 @@ name: Test composer install
 on:
   pull_request:
     branches:
-      - *.x
+      - [3-9].x
 
 jobs:
   build:
