@@ -74,9 +74,6 @@
     },
     "config": {
         "sort-packages": true,
-        "process-timeout": 2000,
-        "allow-plugins": {
-            "phpstan/extension-installer": true
-        }
+        "process-timeout": 2000
     }
 }

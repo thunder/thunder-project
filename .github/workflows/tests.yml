@@ -38,6 +38,7 @@ jobs:
         composer config allow-plugins.composer/installers true --no-plugins
         composer config allow-plugins.oomphinc/composer-installers-extender true --no-plugins
         composer config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true --no-plugins
+        composer config allow-plugins.phpstan/extension-installer true --no-plugins
 
     - name: Install dependencies
       run: composer install
