@@ -32,7 +32,7 @@
         }
     ],
     "require": {
-        "thunder/thunder-distribution": "^7.0@STABLE",
+        "thunder/thunder-distribution": "dev-task/minimum-stability-stable@dev",
         "drupal/core-composer-scaffold": "^10.0",
         "composer/installers": "^1.2",
         "drush/drush": "^12.1",
@@ -45,7 +45,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "alpha",
     "prefer-stable": true,
     "autoload": {
         "files": ["load.environment.php"]
