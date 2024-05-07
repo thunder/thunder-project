@@ -40,7 +40,7 @@
         "oomphinc/composer-installers-extender": "^2.0"
     },
     "require-dev": {
-        "drupal/core-dev": "^10.0"
+        "drupal/core-dev": "10.3@dev"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -74,6 +74,15 @@
     },
     "config": {
         "sort-packages": true,
-        "process-timeout": 2000
+        "process-timeout": 2000,
+        "allow-plugins": {
+            "drupal/core-composer-scaffold": false,
+            "php-http/discovery": false,
+            "composer/installers": false,
+            "cweagans/composer-patches": false,
+            "phpstan/extension-installer": false,
+            "dealerdirect/phpcodesniffer-composer-installer": false,
+            "oomphinc/composer-installers-extender": false
+        }
     }
 }
