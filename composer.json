@@ -32,24 +32,20 @@
         }
     ],
     "require": {
-        "thunder/thunder-distribution": "^7.0@STABLE",
-        "drupal/core-composer-scaffold": "^10.0||^11.0",
-        "composer/installers": "^1.2",
-        "drush/drush": "~12.0||~13.0",
-        "vlucas/phpdotenv": "^2.4",
+        "thunder/thunder-distribution": "^8.2@dev",
+        "drupal/core-composer-scaffold": "^11.0",
+        "composer/installers": "^2.2",
+        "drush/drush": "~13.0",
         "oomphinc/composer-installers-extender": "^2.0"
     },
     "require-dev": {
-        "drupal/core-dev": "^10.0||^11.0"
+        "drupal/core-dev": "^11.0"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "alpha",
     "prefer-stable": true,
-    "autoload": {
-        "files": ["load.environment.php"]
-    },
     "extra": {
         "composer-exit-on-patch-failure": true,
         "installer-types": ["bower-asset", "npm-asset"],
@@ -74,6 +70,16 @@
     },
     "config": {
         "sort-packages": true,
-        "process-timeout": 2000
+        "process-timeout": 2000,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-composer-scaffold": true,
+            "oomphinc/composer-installers-extender": true,
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true,
+            "tbachert/spi": true
+        }
     }
 }
