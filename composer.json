@@ -34,7 +34,7 @@
     "require": {
         "thunder/thunder-distribution": "^8.2@dev",
         "drupal/core-composer-scaffold": "^11.0",
-        "drupal/media_entity_pinterest": "2.x-dev",
+        "drupal/media_entity_pinterest": "2.x-dev@dev",
         "composer/installers": "^2.2",
         "drush/drush": "~13.0",
         "oomphinc/composer-installers-extender": "^2.0"
