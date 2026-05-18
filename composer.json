@@ -34,7 +34,8 @@
     "require": {
         "thunder/thunder-distribution": "^8.2",
         "drupal/core-composer-scaffold": "^11.0",
-        "composer/installers": "^2.2",
+        "drupal/core-recipe-unpack": "^11.3",
+        "composer/installers": "^2.3",
         "drush/drush": "~13.0",
         "oomphinc/composer-installers-extender": "^2.0"
     },
@@ -50,6 +51,7 @@
         "composer-exit-on-patch-failure": true,
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
+            "recipes/{$name}": ["type:drupal-recipe"],
             "docroot/core": ["type:drupal-core"],
             "docroot/libraries/{$name}": [
                 "type:drupal-library",
